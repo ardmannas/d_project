@@ -18,9 +18,15 @@
     <ClCompile Include="lexer.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="idStream.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lexer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="idStream.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
