@@ -16,9 +16,14 @@ using namespace std;
 */
 class idStream {
 public:
+private:
 	bool isFile;
 	string fileName;
+public:
 	idStream(const int argc, const char * argv[]);
+	bool GetMode() { return this->isFile; }
+	string GetFilename() { return this->fileName; }
+	void InterpreterMode( const bool type ) { this->isFile = !type; }
 };
 
 #endif
