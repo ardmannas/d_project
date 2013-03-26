@@ -1,6 +1,5 @@
 #include "idTokenNum.h"
 
-
 idTokenNum::idTokenNum( tokenType_t type, const string str ): idToken( type, str ) {}
 
 idTokenNum::~idTokenNum(){}

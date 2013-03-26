@@ -1,5 +1,4 @@
-#ifndef _lexer_
-#define _lexer_
+#pragma once
 
 #include <iostream>
 #include <iomanip>
@@ -16,5 +15,3 @@ enum errors_t {
 	ALL_IS_OK,
 
 };
-
-#endif

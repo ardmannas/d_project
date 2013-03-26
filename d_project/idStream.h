@@ -1,5 +1,4 @@
-#ifndef _idStream_
-#define _idStream_
+#pragma once
 
 #include "lexer.h"
 
@@ -25,5 +24,3 @@ public:
 	string GetFilename() { return this->fileName; }
 	void InterpreterMode( const bool type ) { this->isFile = !type; }
 };
-
-#endif

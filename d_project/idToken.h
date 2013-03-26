@@ -1,10 +1,9 @@
-//#ifndef _idToken_
-//#define _idToken_
 #pragma once
-#include "lexer.h"
- using namespace std;
 
- enum tokenType_t {
+#include "lexer.h"
+using namespace std;
+
+enum tokenType_t {
 	IDENTIFIER,
 	ASSIGNMENT,
 	OPEN_PARENTHESIS,
@@ -16,26 +15,24 @@
 	STRING,
 	COMMENT,
 	SPACE,
- };
+};
 
- /*
+/*
 ===============================================================================
 
-	This class store token type and value if necessary.
-	*some tokens must have additional value.
+This class store token type and value if necessary.
+*some tokens must have additional value.
 
 ===============================================================================
 */
- class idToken {
- protected:
-	 tokenType_t tokenType;
-	 string text;
- public:
-	 idToken( tokenType_t type, const string str );
-	 virtual ~idToken() {};
-	 tokenType_t GetTokenType();
-	 string GetText();
-	 virtual void Evaluate();
+class idToken {
+protected:
+	tokenType_t tokenType;
+	string text;
+public:
+	idToken( tokenType_t type, const string str );
+	virtual ~idToken() {};
+	tokenType_t GetTokenType();
+	string GetText();
+	virtual void Evaluate();
  };
-
-//#endif

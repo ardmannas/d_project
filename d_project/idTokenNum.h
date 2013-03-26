@@ -1,4 +1,5 @@
 #pragma once
+
 #include "idToken.h"
 class idTokenNum: public idToken {
 protected:

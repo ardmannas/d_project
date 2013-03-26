@@ -12,5 +12,7 @@ int main(const int argc, const char * argv[]) {
 	//cout << abc->GetType();
 	//cout << abc.GetType();
 	//abc.get();
+	//delete abc;
+	//bp->~idTokenNum();
 	system( "pause" );
 }
