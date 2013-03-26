@@ -1,6 +1,6 @@
-#ifndef _idToken_
-#define _idToken_
-
+//#ifndef _idToken_
+//#define _idToken_
+#pragma once
 #include "lexer.h"
  using namespace std;
 
@@ -27,9 +27,15 @@
 ===============================================================================
 */
  class idToken {
+ protected:
+	 tokenType_t tokenType;
+	 string text;
  public:
-	 unsigned short int tokenType;
-
+	 idToken( tokenType_t type, const string str );
+	 virtual ~idToken() {};
+	 tokenType_t GetTokenType();
+	 string GetText();
+	 virtual void Evaluate();
  };
 
-#endif
+//#endif
